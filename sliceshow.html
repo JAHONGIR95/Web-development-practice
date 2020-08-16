@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>slideshow.com</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/slideshow.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/cycle2.js"></script>
+        <script type="text/javascript" src="js/declarativeToggle.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+    </head>
+    
+    <body>
+    	<div class="fakeloader"></div>
+        <header>
+            <div class="container">
+                <h1>Website for learning slideshow</h1>
+                <p>In order to learn slideshow I created this webpage</p>
+                
+                <span data-toggle-target=".site-nav" class="toggle-btn menu">MENU</span>
+                
+                <nav class="site-nav">
+                    <ul class="group">
+                        <li><a href="#">Kino</a>
+                            <ul class="group">
+                                <li><a href="#">American</a></li>
+                                <li><a href="#">Indian</a></li>
+                                <li><a href="#">Turkish</a></li>
+                                <li><a href="#">Korean</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">Cenima</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Map</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="main-part group">
+            <div class="container">
+                <div class="first-main-part">
+                    <h2>Welcome to the gallery!</h2>
+                    
+                    <div class="gallery group">    
+                    
+                        <a href="image/strawberry.jpg" data-lightbox="gallery" data-title="This is a strawberry."><img src="image/strawberry-thumb.jpg" alt="Strawberry"></a>
+                        <a href="image/dock.jpg" data-lightbox="gallery"><img src="image/dock-thumb.jpg" alt="Dock"></a>
+                        <a href="image/bee.jpg" data-lightbox="gallery"><img src="image/bee-thumb.jpg" alt="Bee"></a>
+                        <a href="image/bear.jpg" data-lightbox="gallery"><img src="image/bear-thumb.jpg" alt="Bear"></a>
+                        <a href="image/squirrel.jpg" data-lightbox="gallery"><img src="image/squirrel-thumb.jpg" alt="Squirrel"></a>
+                        <a href="image/trees.jpg" data-lightbox="gallery"><img src="image/trees-thumb.jpg" alt="Trees"></a>
+                        <a href="image/water.jpg" data-lightbox="gallery"><img src="image/water-thumb.jpg" alt="Water"></a>
+                        <a href="image/duck.jpg" data-lightbox="gallery"><img src="image/duck-thumb.jpg" alt="Duck"></a>
+
+                    </div>
+                    
+                    
+                    
+<!-- Slide show part! This is a slide show part which is starting! -->
+                    <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+                        
+                        <span class="cycle-prev">&laquo;</span>
+                        <span class="cycle-next">&raquo;</span>
+                        <span class="cycle-pager"></span>
+                        
+                        <div class="slide">
+                            <img src="image/bee.jpg" alt="Bee">
+                            <div class="text">
+                                <h3>First Title Here!</h3>
+                                <p>This is a special unique First title discription! <a href="#" class="btn-a">Call to action</a> </p>
+                            </div>                  
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/duck.jpg" alt="Duck">
+                            <div class="text">
+                                <h3>Secend Title Here!</h3>
+                                <p>This is a special unique Second title discription!</p>
+                            </div>                        
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/squirrel.jpg" alt="Squirrel">
+                            <div class="text">
+                                <h3>Third Title Here!</h3>
+                                <p>This is a special unique Third title discription!</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.<span data-toggle-target=".full-text" data-toggle-text="Hide the full text..." class="toggle-btn read-more">Read the full text...</span></p>
+                    
+                    <div class="full-text">
+                    
+                        <h3>Full text</h3>
+                        <p>Bugun man fast typingdan tezligim oshganini sezdim va yana da ko’proq mashq qilishim kerakligini tushundim. Yana bugun yangamdan biz yaxshi qiz haqida ham eshitdim, agar Alloh hayrli qilsa man shu qiz bilan oila quraman Inshoalloh. Bugun fast typing bilan shug’ullanganimda fast typing platformasi yaxshi ishlamayapti. Xo’p endi nima qilsak bo’ladi bugungacha kutamiz. Har endi rus tili o’rganib keyin web dasturlash bilan shug’ullanishim kerak. Inshoalloh bugun ko’plab narsalarni qilishga ulguraman. Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="aside">
+                    <h2>Sidebar Heading</h2>
+                    <p>Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <footer>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Home page</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Best selling</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2020-yil. This is the webpage</p>
+        </footer>
+    </body>
+    
+</html>
