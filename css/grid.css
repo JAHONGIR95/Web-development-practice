@@ -1,0 +1,192 @@
+html {
+    line-height: 1.7;
+    
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: #565d75;
+    color: #fff;  
+    padding-top: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 185%;
+}
+
+header p {
+    margin: 0;
+    font-size: 100%;
+}
+
+.site-nav {
+    padding-top: 30px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.site-nav a {
+    display: block;
+    font-size: 100%;
+    color: #fff;
+    padding: 18px 20px;
+    background-color: #4a5168;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    background-color: #646c88;
+    border-bottom: 3px solid #293046;
+    padding-bottom: 15px;
+
+}
+
+@media screen and (max-width: 767px){
+    .site-nav li {
+        width: 33.332%;
+        margin: 0;
+    }
+    
+    .site-nav a {
+        padding: 15px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    .site-nav a:hover {
+        border-bottom: 0;
+        
+    }
+}
+
+/* float formatting class starting */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+/* float formatting class ending */
+
+
+.box-a {
+    padding: 7px 20px;
+    border: 2px solid #cacdd0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background-color: #efefef;   
+}
+
+
+/*-----------------------------------------------------*/
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1280px){
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+}
+
+
+
+
+
+
+main-area {
+    background-color: #fff;
+}
+
+.asosiy-qism {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.tomon-qism {
+    width: 34%;
+    float: left;
+}
+
+@media screen and (max-width: 767px){
+    
+    .asosiy-qism {
+        float: none;
+        width: auto;
+        padding-right: 0;
+    }
+    
+    .tomon-qism {
+        float: none;
+        width: auto;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    background-color: #565d75;
+}
