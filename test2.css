@@ -1,0 +1,408 @@
+html {
+    background-color: #9fe430;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+    margin: 0;
+}
+
+/* float formatting class starting */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+/* float formatting class ending */
+
+header {
+    padding-top: 15px;
+    font-size: 120%;
+    color: #088d1c;
+    background-color: #a6ff17;   
+}
+
+@media screen and (max-width: 700px){
+    
+    .hide {
+        display: none;
+    }
+    
+    header h1 {
+        color: #32bb08;
+        font-weight: 500;
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+}
+header p {
+    margin: 0;
+}
+
+.site-nav {
+    padding-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    width: 18%;
+    text-align: center;
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    display: block;
+    background-color: #34d105;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff; 
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+
+.site-nav a:hover {
+    background-color: #41ee0d; 
+    color: #0d9522;
+}
+
+@media screen and (max-width: 700px){
+    
+    .site-nav li{
+        width: 25%;
+        margin-right: 0;
+    }
+    
+    .site-nav a {
+        padding: 15px 0;
+        text-align: center;
+        margin-right: 5px;
+    }
+    
+    .site-nav a:hover {
+        border-bottom: 3px solid #0d721d;
+        padding-bottom: 12px;
+    }
+}
+
+/* @media --------------------------------------*/
+
+@media screen and (max-width: 480px){
+    
+    .site-nav li {
+        width: 50%;
+    }
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;   
+}
+
+@media screen and (max-width: 700px) {
+    
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    
+    .container {
+        max-width: 1200px;
+        font-size: 102%;
+    }
+}
+
+.main-area {
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 700px){
+    
+    .main-area {
+        padding-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+    .main-area {
+        padding-top: 5px;
+    }
+}
+
+
+
+/* animation section starting */
+
+@-webkit-keyframes slideSpin {
+    
+    0% {
+        opacity: 1;
+        transform: translateX(0%) rotate(180deg);
+    }
+	
+	50% { 
+		transform: translateX(150%) scale(.05);
+	}
+	
+	75% { opacity: 1;
+		transform: translateX(150%) rotate(180deg) scale(.05);
+	}
+			
+	100% {
+        opacity: 1;
+		transform: translateX(300%) rotate(180deg);
+	}
+	
+}
+
+
+
+
+@keyframes fadeBounce {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    
+    40% {
+        transform: translateY(0);
+    }
+    
+    55% {
+        transform: translateY(-8%)
+    }
+    
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    85% {
+        transform: translateY(-3%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.star {
+	-webkit-animation: slideSpin 5s infinite alternate forwards;
+	animation: slideSpin 5s infinite alternate forwards;
+	width: 25%;
+	height: auto;
+    margin: 20px 0;
+}
+
+
+
+
+/* animation section ending */
+
+/* box area starting */
+
+
+.box-a {
+    animation: fadeBounce 3s;
+    display: block;
+    padding: 20px;
+    background-color: #cef0fc;
+    border: 2px solid #bed5fa;
+    width: 47%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    border-radius: 55px/25px;
+    box-shadow: 8px 5px 10px #b7cff4; 
+  
+}
+
+
+.box-a:hover {
+    box-shadow: inset 4px  5px 5px #b7cff4;
+}
+
+.box1 {
+    float: left;
+    
+}
+
+.box2 {
+    float: right;
+}
+
+/* box area ending */
+
+
+
+
+
+
+/* example section starting */
+
+.example-a {
+    display: block;
+    padding: 0px 15px 15px 15px;
+    background-color: #dfe5ee;
+    color: #999;
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    transition: all 1s; 
+    
+}
+
+.example-a img {
+    display: block;
+    width: 300px;
+    
+}
+
+.example-a:hover {
+    transform: translateY(-15px);
+       
+}
+
+
+/* example section ending */
+
+
+
+.main-content {
+    float: left;
+    width: 66%;
+    box-sizing: border-box;
+    padding-right: 40px;   
+}
+
+aside {
+    float: left;
+    width: 34%;
+    box-sizing: border-box;
+    font-size: 102%;
+    background-color: #caff67;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #caff67, #fff );
+    border: 1px solid #caff67;
+}
+
+@media screen and (max-width: 700px){
+    
+    .main-content,
+    aside {
+        width: auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding-right: 0;
+    } 
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #088d1c;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.image-banner {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 15px 20px;
+    transform: translateY(100%);
+    transition-property: all;
+    transition-duration: 1s;
+    opacity: 0;
+    
+}
+
+.image-banner:hover .banner-description {
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+
+.image-banner img {
+    display: block;
+    transition: all 3s;
+}
+
+.image-banner:hover img {
+    transform: scale(1.5);
+}
+
+.aylana {
+    background-color: #999;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.aylana:hover {
+    transform: rotate(360deg);
+}
+
+/* form section starting */
+
+
+.textarea {
+    display: block;
+    margin: 20px 0;
+    border: 1px solid #4bed3e;
+    width: 300px;
+    height: 100px;
+    transition-duration: 1.5s;
+}
+
+.textarea:focus {
+    width: 500px;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .13);
+    outline: 0;
+}
